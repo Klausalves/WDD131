@@ -1,0 +1,123 @@
+/* Google Fonts Import */
+/* Visit fonts.google.com, select your fonts, and paste the import code here */
+/* Example: */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* General Rules and Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Your chosen font */
+    line-height: 1.6;
+    color: #333; /* Text color */
+    background-color: #f4f4f4; /* Page background color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom, even with little content */
+}
+
+/* Header */
+header {
+    background-color: #007bff; /* Header background color */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#course-title {
+    display: block; /* Essential for easy centering */
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Flexbox Navigation */
+nav {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers links horizontally */
+    gap: 20px; /* Spacing between links */
+    flex-wrap: wrap; /* Allows links to wrap in smaller screens */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+}
+
+/* Main Content */
+main {
+    max-width: 960px; /* Maximum content width */
+    margin: 2rem auto; /* Centers main horizontally and adds top/bottom margin */
+    padding: 1rem;
+    flex-grow: 1; /* Allows main to take up remaining space */
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0056b3; /* Main heading color */
+}
+
+/* Cards with CSS Grid */
+main { /* Note: This main selector should not be repeated, combine with the previous one or adjust */
+    display: grid; /* Enables Grid */
+    grid-template-columns: 1fr; /* One column by default */
+    gap: 2rem; /* Spacing between cards */
+}
+
+/* For larger screens, two cards per row */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+    }
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center; /* Centers content within the card */
+}
+
+.card h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
