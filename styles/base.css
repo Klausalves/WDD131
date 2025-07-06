@@ -27,6 +27,7 @@ header {
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding-bottom: 0;
 }
 
 #course-title {
@@ -42,6 +43,7 @@ nav {
     justify-content: center; /* Centers links horizontally */
     gap: 20px; /* Spacing between links */
     flex-wrap: wrap; /* Allows links to wrap in smaller screens */
+    background: #181818;
 }
 
 nav a {
@@ -97,10 +99,17 @@ main { /* Note: This main selector should not be repeated, combine with the prev
     margin-bottom: 1rem;
 }
 
+.card img.profile-img {
+    max-width: 100%;
+    width: 210px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
 .card img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
     margin-bottom: 1rem;
 }
 
